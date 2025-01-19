@@ -1,5 +1,11 @@
 import { RefObject } from "react";
 
+/**
+ * createRealtimeConnection method
+ * @param EPHEMERAL_KEY 
+ * @param audioElement 
+ * @returns 
+ */
 export async function createRealtimeConnection(
   EPHEMERAL_KEY: string,
   audioElement: RefObject<HTMLAudioElement | null>

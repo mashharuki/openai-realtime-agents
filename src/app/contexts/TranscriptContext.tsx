@@ -1,8 +1,8 @@
 "use client";
 
-import React, { createContext, useContext, useState, FC, PropsWithChildren } from "react";
-import { v4 as uuidv4 } from "uuid";
 import { TranscriptItem } from "@/app/types";
+import { createContext, FC, PropsWithChildren, useContext, useState } from "react";
+import { v4 as uuidv4 } from "uuid";
 
 type TranscriptContextValue = {
   transcriptItems: TranscriptItem[];
@@ -15,6 +15,11 @@ type TranscriptContextValue = {
 
 const TranscriptContext = createContext<TranscriptContextValue | undefined>(undefined);
 
+/**
+ * TranscriptProvider Provider
+ * @param param0 
+ * @returns 
+ */
 export const TranscriptProvider: FC<PropsWithChildren> = ({ children }) => {
   const [transcriptItems, setTranscriptItems] = useState<TranscriptItem[]>([]);
 

@@ -2,6 +2,7 @@ import { NextResponse } from "next/server";
 
 export async function GET() {
   try {
+    // リアルタイムでセッション情報を取得するAPI
     const response = await fetch(
       "https://api.openai.com/v1/realtime/sessions",
       {

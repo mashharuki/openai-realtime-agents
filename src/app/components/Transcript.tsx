@@ -1,10 +1,10 @@
 "use-client";
 
-import React, { useEffect, useRef, useState } from "react";
-import ReactMarkdown from "react-markdown";
+import { useTranscript } from "@/app/contexts/TranscriptContext";
 import { TranscriptItem } from "@/app/types";
 import Image from "next/image";
-import { useTranscript } from "@/app/contexts/TranscriptContext";
+import { useEffect, useRef, useState } from "react";
+import ReactMarkdown from "react-markdown";
 
 export interface TranscriptProps {
   userText: string;
@@ -13,6 +13,11 @@ export interface TranscriptProps {
   canSend: boolean;
 }
 
+/**
+ * Transcript component
+ * @param param0 
+ * @returns 
+ */
 function Transcript({
   userText,
   setUserText,
