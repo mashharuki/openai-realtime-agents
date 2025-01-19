@@ -70,3 +70,6 @@ This fully specifies the agent set that was used in the interaction shown in the
 ## Core Contributors
 - Noah MacCallum - [noahmacca](https://x.com/noahmacca)
 - Ilan Bigio - [ibigio](https://github.com/ibigio)
+
+### 参考情報
+[Zenn - openai-realtime-agents の調査のスクラップ](https://zenn.dev/t_kakei/scraps/bf34982173c456)
